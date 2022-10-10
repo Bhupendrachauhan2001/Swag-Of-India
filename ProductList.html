@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commers Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ProductList.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+</head>
+<body>
+    <header id="HEADER"></header>
+    <!-- ********************* ALL PRODUCT-LIST PAGE*****************  -->
+    <div class="container">
+        <div class="my-profile d-flex Product-List mt-4">
+            
+            <aside class="col-3 pt-1">
+                <h5 class="font-weight-bold">FILTER</h5>
+                <div class="myprofile-aside-list">
+                    <h6 class="font-weight-bold">Price</h6>
+                    <ul>
+                        <li> <input type="checkbox" name="kurta" id="Kurta" value="kurta">
+                            <label for="Category">Kurtas (28921)</label>
+                        </li>
+                        <li> <input type="checkbox" name="kurta-set" id="Kurta-Set" value="kurta-set">
+                            <label for="Category">Kurta Sets (9071)</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="myprofile-aside-list">
+                    <h6 class="font-weight-bold">Brand</h6>
+                    <ul>
+                        <li> <input type="checkbox" name="brand" id="anouk" value="anouk">
+                            <label for="Brand">Anouk(28921)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="sangria" value="sangria">
+                            <label for="Brand">Sangria (9071)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="w" value="w">
+                            <label for="Brand">W (1559)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="biba" value="biba">
+                            <label for="Brand">Biba(1440)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="libas" value="sangria">
+                            <label for="Brand">Libas (1013)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="anouk" value="anouk">
+                            <label for="Brand">Anouk(28921)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="sangria" value="sangria">
+                            <label for="Brand">Sangria (9071)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="w" value="w">
+                            <label for="Brand">W (1559)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="biba" value="biba">
+                            <label for="Brand">Biba(1440)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="libas" value="sangria">
+                            <label for="Brand">Libas (1013)</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="myprofile-aside-list">
+                    <h6 class="font-weight-bold">Price</h6>
+                    <ul>
+                        <li> <input type="checkbox" name="prices" id="low-price" value="price239to15808">
+                            <label for="low-price">Rs. 239 to Rs. 15805(920)</label>
+                        </li>
+                        <li> <input type="checkbox" name="prices" id="mid-price" value="price15808to31372">
+                            <label for="mid-price">Rs. 15805 to Rs. 31372(26)</label>
+                        </li>
+                        <li> <input type="checkbox" name="prices" id="high-price" value="price31372to56937">
+                            <label for="low-price">Rs. 15805 to rs. 46937(13)</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="myprofile-aside-list">
+                    <h6 class="font-weight-bold">Discount Range</h6>
+                    <ul>
+                        <li> <input type="checkbox" name="brand" id="anouk" value="anouk">
+                            <label for="Dicsount-range">Anouk(28921)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="sangria" value="sangria">
+                            <label for="Dicsount-range">Sangria (9071)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="w" value="w">
+                            <label for="Dicsount-range">W (1559)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="biba" value="biba">
+                            <label for="Dicsount-range">Biba(1440)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="libas" value="sangria">
+                            <label for="Dicsount-range">Libas (1013)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="anouk" value="anouk">
+                            <label for="Dicsount-range">Anouk(28921)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="sangria" value="sangria">
+                            <label for="Dicsount-range">Sangria (9071)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="w" value="w">
+                            <label for="Dicsount-range">W (1559)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="biba" value="biba">
+                            <label for="Dicsount-range">Biba(1440)</label>
+                        </li>
+                        <li> <input type="checkbox" name="brand" id="libas" value="sangria">
+                            <label for="Dicsount-range">Libas (1013)</label>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- ********** MY PROFILE RIGHT SIDE ******** -->
+
+            <!-- ******* PRODUCT LIST *******  -->
+            <div class="My-Profile_RightSide latest-product-area col-9">
+                <div class="container">
+                    <div class="headding d-flex justify-content-between align-items-center mt-0 mb-3 d-inline-block pt-0 d-inline mb-0">
+                        <div><b>Fans</b>(76 items)</div>
+                        <div>
+                            <label class="mb-0" for="sort-by">SORT BY <select name="price" id="low-to-high">
+                                    <option value="Price(Low to High)">Price(Low to High)</option>
+                                    <option value="Popularity">Popularity</option>
+                                </select></label>
+                        </div>
+                    </div>
+                    <div class="row" id="ProductListArea">
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ********************* MY PROFILE SERVICE *****************  -->
+    <footer id="FOOTER"></footer>
+
+    <script src="HEADER.js"></script>
+    <script src="FOOTER.JS"></script>
+    <script src="script.js"></script>
+    <script src="ProductJSON.js"></script>
+    <script src="Cart.js"></script>
+    <script src="cart-list.js"></script>
+    <script src="Wislist.js"></script>
+    <script src="Wishlist-list.js"></script>
+    <script src="View-List.js"></script>
+    <script src="View.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

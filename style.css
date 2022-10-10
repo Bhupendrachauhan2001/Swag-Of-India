@@ -1,0 +1,2198 @@
+/* @import  url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,600,700,800|Poppins:400,500,600,700|Yellowtail&display=swap); */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+body{
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+/* @@@@@@@@@@@@@@@@@@@@@@@@ INDEX FILE'S CSS STYLE START @@@@@@@@@@@@@@@@@@@@@ */
+
+}
+.header-info-right ul{
+    list-style: none;
+    margin: 0; 
+    padding-left: 0;
+    /* background-color: red; */
+}
+.header-info-right ul li{
+    display: inline-block;
+    /* background-color: green; */
+    
+    /* background-color: black; */
+}
+.header-top ul li a{
+    padding-left: 36px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.header-info-left a{
+    color: #fff;
+    padding-left: 36px;
+}
+.top-bg{
+    background-color: #f8880f;
+}
+.header-top{
+    padding: 13px 10px;
+}
+
+.submenu{
+    display: none;
+}
+.f-right{
+    /* background-color: red; */
+    float: right;
+}
+.header-bottom  ul{
+    font-size: 18px;
+    color: #000;
+    margin-left: 36px;
+
+}
+
+.header-bottom ul li a{
+    font-size: 18px;
+    color: #000;
+    display: inline-block;
+    padding: 15px 18px;
+    text-decoration: none;
+
+}
+.header-bottom .header-right li{
+    display: inline-block;
+}
+.header-bottom .header-right i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid rgb(165, 163, 163);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 19px;
+    color: #4e4e4e;
+    /* padding: 39px 18px; */
+
+}
+.header-bottom ul li a:hover{
+    color: red;
+    font-weight: bold;
+}
+/* *********** Style To Make Stricky Navbar ************ */
+ .sticky{
+  margin: 0 auto;  
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0, .2);
+  margin-bottom: 200px;
+  transition: all .5s;
+}
+.sticky:active .Jumbotron{
+  margin-top: 100px;
+}
+.buttn{
+    background-color: #f8880f;
+    /* -moz-user-select: none; */
+    text-transform: capitalize;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    padding: 27px 44px;
+    border-radius: 25px;
+    margin: 10px;
+    transition: color .4s linear;
+    border: 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0;
+}
+.buttn:hover::before{
+    transform: scaleX(1);
+    color: white !important;
+    z-index: -1;
+}
+.buttn::before{
+    background-color: #fece25;
+    content: "";
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%; 
+    height: 100%;
+    background: #ffce25;
+    z-index: 1;
+    border-radius: 25px;
+    transition: transform .5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(.5, 1.6, .4, .7);
+    transform: scaleX(0);
+   
+}
+.header-btn {
+    padding: 25px 28px !important
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .header-bottom .main-menu ul li a{
+        padding: 39px 15px;
+    }
+    
+}
+@media (min-width:1200px) and (max-width:1400px){
+    .header-bottom .main-menu ul li a{
+        padding: 39px 13px;
+    }
+}
+.header-bottom .main-menu ul li:hover>a{
+    color: #ff003c;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* JUMBOTRON START*/
+.sticky-active-jumbotron{
+  margin-top: 200px;
+
+}
+.herocaption{
+    left: 20px;
+}
+.herocaption span{
+    color: #2577fd;
+    font-family: Yellowtail, cursive;
+    font-size: 40px;
+    display: inline-block;
+}
+.herocaption h1{
+    color: #1f2022;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-bottom: 13px
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .herocaption h1{
+        font-size: 60px;
+        line-height: 1.2;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .herocaption h1{
+        font-size: 50px;
+        line-height: 1.2;
+    }
+}
+@media (max-width:767px){
+    .herocaption h1{
+        font-size: 35px;
+        line-height: 1.2;
+        margin-bottom: 26px;
+    }
+}
+.herocaption p{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 39px;
+    color: #313639;
+    margin-bottom: 50px;
+    text-transform: capitalize
+
+}
+@media (maxwidth:767px){
+    .herocaption p{
+        margin-bottom: 30px;
+    }
+}
+.heroimg{
+    position: relative;
+    left: 11px;
+    /* bottom: 0px; */
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .heroimg{
+        left: -28px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .heroimg{
+        left: -83px;
+        bottom: 0;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px){
+    .heroimg{
+        left: -179px;
+        bottom: 0;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .heroimg img{
+        height: 500px;
+    }
+}
+/* ********* BUTTON FOR GO TO T0P ON PAGE ********** */
+.go-top{
+    /* Hidden by default */
+    position: fixed; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    width: 45px ;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 10px;
+    pointer-events: none;
+    font-size: 20px;
+    transition: all .5s ease-in;
+  }
+  .go-top-active{
+    pointer-events: auto;
+    right: 25px; 
+    bottom: 25px;
+    opacity: 1;
+
+    /* opacity: 1; */
+  }
+/* ***** ASIDE OF INDEX-FILE ****** */
+#aside{
+    float: left;
+    width: 200px;
+    margin-top: 50px;
+}
+/* CATEGORY AREA */
+.category-area{
+    bottom: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .category-area{
+        padding-left: 0;
+        padding-right: 0px;
+    }
+}
+@media (max-width:767px){
+    .category-area{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+.section-padding30{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+@media only screen and (min-width:1200px) and (max-width:1600px){
+    .section-padding30{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1600px){
+    .section-padding30{
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .section-padding30{
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+}
+@media (max-width:767px){
+    .section-padding30{
+        padding-top: 60px;
+        padding-bottom: 28px;
+    }
+}
+.category-area .category-img{
+    position: relative;
+}
+.category-area .category-img img{
+    width: 100%;
+    border-radius: 6px;
+}
+.category-area .category-img .category-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 52px;
+
+}
+@media only screen and (min-width:1200px) and (max-width:1600px){
+    .category-area .category-img .category-caption{
+        right: 13px;  
+    }
+}
+@media (max-width:767px){
+    .category-area .category-img .category-caption{ 
+        right: 13px;
+    }
+}
+.category-area .category-img .category-caption h2{ 
+    color: #1f1f1f;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+@media only screen and (min-width:1200px) and (max-width:1600px){
+    .category-area .category-img .category-caption h2{
+        font-size: 26px;  
+    }
+}
+@media (max-width:767px){
+    .category-area .category-img .category-caption h2{ 
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+}
+.category-area .category-img .category-caption .best a{ 
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: capitalize;
+    /* margin-bottom: 13px; */
+    background: #ffce25;
+    padding: 13px 24px;
+    border-radius: 30px;
+}
+@media only screen and (min-width:1200px) and (max-width:1600px){
+    .category-area .category-img .category-caption .best a{
+        padding: 13px 15px;  
+    }
+}
+@media (max-width:767px){
+    .category-area .category-img .category-caption .best a{ 
+        padding: 13px 15px;
+        font-size: 12px;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serf;
+    color: #0b1c39;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+}
+.title{
+    margin-bottom: 60px;
+}
+/* Category Area End */
+
+/* latest products area */
+@media (max-width:767px) {
+    .latest-product-area .properties-button {
+        float: left;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .latest-product-area .properties-button {
+        float: left
+    }
+}
+.latest-product-area .nav-tabs .nav-link {
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: rgb(10, 11, 10);
+}
+@media (max-width:767px) {
+    .latest-product-area .nav-tabs .nav-link {
+        padding: .5rem .6rem
+    }
+}
+.latest-product-area .nav-tabs .nav-item.show .nav-link,
+.latest-product-area .nav-tabs .nav-link.active {
+    color: #ff003c;
+}
+.latest-product-area .nav-tabs .nav-item {
+    padding-bottom: 10px;
+    display: block;
+    color: #8f8f96;
+    text-transform: capitalize;
+    font-size: 16px
+}
+.latest-product-area .nav-tabs {
+    /* background-color: blue; */
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    position: relative;
+    border: 0;
+    display: flex;
+    justify-content: center
+}
+/* *********** LATEST ARIA PRODUCTS ******** */
+/* Blur and show (Cart, Wishlist, View) when hover on Product */
+ /* its also allow on .Product-List page */
+
+
+.latest-product-area .single-product{
+    margin-bottom: 60px;
+    /* color: #00ff44; */
+}
+.latest-product-area .single-product .product-img {
+    margin-bottom: 30px;
+    position: relative;
+}
+.latest-product-area .single-product .product-img img {
+    width: 100%
+}
+.latest-product-area .single-product .product-img .new-product {
+    position: absolute;
+    top: 25px;
+    left: 23px
+}
+.latest-product-area .single-product .product-img .product-hover {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    opacity: 1;
+}
+.blur>img{
+    opacity: 0.2;
+}
+.Show{
+    visibility: visible;
+}
+.Hide{
+   visibility: hidden;
+   display: none;
+}
+.latest-product-area .single-product .product-img .new-product span {
+    background: #ff003c;
+    padding: 3px 16px;
+    border-radius: 30px;
+    color: #fff
+}
+.latest-product-area .single-product h4 a{
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #383838
+}
+
+.latest-product-area .single-product h4 a:hover {
+    color: #ff003c
+}
+.latest-product-area .single-product .product-caption .product-rating i {
+    color: #ffbc07;
+    margin-bottom: 14px
+}
+.latest-product-area .single-product .product-caption .product-rating i.low-star {
+    color: #d3d3d3;
+}
+.latest-product-area .single-product .product-caption .price ul li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 13px
+}
+.latest-product-area .single-product .product-caption .price ul li.discount {
+    color: #ff003c;
+    text-decoration: line-through
+}
+
+/* -----------------------P*R*O*D*U*C*T-L*I*S*T PAGE START ------------  */
+
+.Product-List  h5 {
+    color: black;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 1.5px 0 1.5px 20px;
+
+}
+.Product-List .myprofile-aside-list ul{
+    margin-top: 3px;
+}
+.Product-List .myprofile-aside-list ul li {
+    width: 100%;
+    margin: 0;
+    display: block;
+    padding: 0px 0px 0px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;   
+}
+.My-Profile_RightSide .single-product .product-hover div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px 0 0 0;
+}
+
+.My-Profile_RightSide .single-product .product-hover div img:hover{
+   color: white;
+   background-color:#fd7e14;
+}
+/* -----------------------P*R*O*D*U*C*T-L*I*S*T PAGE END ------------  */
+/* <!-- *************  SHOP METHOD START  *********************--> */
+.shop-method-area .single-method h6{
+    color: #282828;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    font-family: Poppins, sans-serif;
+
+}
+.shop-method-area .single-method p{
+    font-size: 16px;
+    
+}
+/* <!-- *************  Footer Area  *********************--> */
+.footer-copy-right{
+    padding-top: 50px;
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .footer-copy-right{
+        padding-top: 0px;
+        float: left;
+    }
+}
+@media only screen and (min-width:567px) and (max-width:767px){
+    .footer-copy-right{
+        padding-top: 0px;
+        float: left;
+    }
+}
+@media (max-width:767px){
+    .footer-copy-right{
+        padding-top: 0px;
+        float: left;
+    }
+}
+.footer-copy-right p{
+    color: #888;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.footer-copy-right  i{
+    color: #2525fd
+}
+.footer-copy-right a{
+    color: #2525fd
+
+}
+.footer-social a i{
+    color: #222;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+/* ***************  SIGIN ACCOUNT PAGE STYLE START ****************** */
+.form-container{
+    width: 100%;
+    margin: auto;
+}
+.form-logo{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.form-logo img{
+    width: 150px;
+    height: 100px;
+}
+
+.form-tab .nav-tabs .nav-link{
+    text-align: center;
+    background-color: rgb(209, 209, 209);
+    color: red;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-tab .nav-tabs .nav-link:active{
+    background-color: #fff;
+    color: red;
+    /* border: 3px solid rgb(237, 237, 237); */
+    /* border-bottom: none; */
+
+    
+}
+
+.login-create-tab .nav .nav-item a{
+    /* background-color: red; */
+    font-size: 18px;
+    width: 100%;
+    /* padding: 5px 20px; */
+    color: red;
+    /* display: block; */
+}
+form{
+    margin-top: 0;
+    padding: 10px 0;
+
+}
+form .form-group{
+    padding:  1px 0;
+    margin:  2px 0px;
+
+}
+
+form .form-group .btn{
+    background-color: #ff9500;
+    border: 2px solid #ff9500;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0;
+    text-transform: uppercase;
+    margin-top: 18px ;
+}
+form .form-group .forgot-password{
+    color: gray;
+    background:transparent;
+    margin-bottom: 1px;
+    
+}
+.login-with-another{
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+}
+.login-with{
+    margin-bottom: 15px;
+}
+.login-with-another .login-with-btn {
+    width: 150px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: red;
+    text-decoration: none;
+    /* color: #fff; */
+    padding: 10px 0px;
+    display: block;
+    margin: 6px auto;
+
+}
+/* Login Or create Account Form style for Mobile device */
+@media only screen and (min-width:768px) and (max-width:991px){
+    .login-with-another .login-with-btn{
+        width: 90px;
+        border-radius: 30px;
+        text-align: center;
+        background-color: rgb(249, 12, 32);
+        text-decoration: none;
+        /* color: #fff; */
+        padding: 10px 0px;
+        display: block;
+        margin: 5px auto;
+    }
+   
+}
+
+@media (max-width:567px){
+    .form-container{
+       width: 80%;
+       margin-top: 0;
+       padding-top: 0;        
+    }
+    .form-logo{
+        width: 120px;
+        height: 70px;
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .form-logo img{
+        display: block;
+        width: 120px;
+        height: 70px;
+    }
+    .form-tab .nav-tabs .nav-link{
+        text-align: center;
+        color: red;
+        border-radius: 0;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 0;
+    }
+    form{
+        margin-top: 0;
+        padding: 0px 0 0 0;
+        margin:  0;
+    }
+    .form-row{
+        margin: 0;
+        padding: 0;
+    }
+    form .form-group{
+        padding:  0px 0;
+        margin-bottom:  10px;
+    
+    }
+ 
+
+    form .form-group .btn{
+        background-color: #ff9500;
+        border: 2px solid #ff9500;
+        border-radius: 0;
+        padding-top: 0px 0;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    form .form-group .forgot-password{
+        color: gray;
+        background:transparent;
+        margin: 12.5px 0;
+        
+    }
+    hr{
+        padding: 0;
+        margin: 0;
+    }
+    .login-with-another{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .login-with{
+        margin-bottom: 5px;
+    }
+    .login-with h5{
+        margin: 0px 0;
+        font-size: 18px;
+    }
+    .login-with-another .login-with-btn {
+        width: 100px;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        /* color: #fff; */
+        padding: 5px 0px;
+        display: block;
+        margin: 5px auto;
+    
+    }
+    .login-with-another .login-with-btn a span{
+        /* text-decoration: none; */
+        color: #fff;
+        font-size: 12px;
+        text-decoration: none;
+        padding: 0 0px;
+        /* background-color: red; */
+    
+    }
+    .login-with-another .facebook-btn {
+        background-color: blue;
+    }
+    .login-with-another .twitter-btn {
+        background-color: skyblue;
+    }
+    .login-with-another .google-btn {
+        background-color: red;
+    }
+}
+
+.login-with-another .facebook-btn {
+    background-color: blue;
+}
+.login-with-another .twitter-btn {
+    background-color: skyblue;
+}
+.login-with-another .google-btn {
+    background-color: red;
+}
+.login-with-another .login-with-btn a{
+    /* text-decoration: none; */
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 5px;
+    /* background-color: red; */
+
+}
+/* ***************I  LOGIN PAGE STYLE END ****************** */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@ INDEX FILE'S CSS STYLE END @@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* ************************************************************************************** */
+                    /* LEAVING INDEX.HTML OTHER HTML PAGE'S CSS STYLE  */
+/* ************************************************************************************** */
+
+
+/* *****************  HEADER STYLE ************************* */
+.header {
+    margin-top: 0px;
+    background-color: rgb(249, 140, 8);
+    padding: 7px 0;
+}
+
+/* HEADER SOCIAL MEDIA ICONS STYLE */
+
+.icons {
+    float: left;
+    align-items: center;
+    display: flex;
+
+
+}
+
+/* HEADER SOCIAL MEDIA ICONS LINK STYLE */
+
+.icons a {
+    background-color: #000;
+    list-style-type: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 0 .4rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    background: white;
+    color: black;
+}
+
+.head-text {
+    font-size: 16px;
+}
+
+/* NAVIGATION-LINK STYLE*/
+.navbar-nav li {
+    padding: 5px 10px;
+}
+
+/* NAVIGATION LINK STYLE*/
+
+.nav-link {
+    font-size: 18px;
+
+}
+
+.nav-link:hover {
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+/* SIGGIN BUTTON STYLE*/
+
+.form-inline button {
+    background-color: rgb(249, 140, 8);
+    color: white;
+    width: 125px;
+}
+
+/* *********** HEADER END ******* */
+
+/* -----------------------PROFILE PAGE START --------------- */
+
+/* NOTE- PAYMENT, SEVICES-FOOTER AND FOOTER OF PROFLE.HTML ARE INCLUDED IN OTHER OTHERS HTML FILE  */
+
+/* _________ PROFILE LEFT SIDE CONTENT _________ */
+.my-profile .myprofile-aside-list {
+    margin: 4px 0;
+}
+
+/* MY PROFILE IMAGE */
+.my-profile .myprofile-aside-list img {
+    margin: 6px 0 20px 0;
+}
+
+.my-profile .myprofile-aside-list p {
+    line-height: .5;
+    padding: 0 0 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: sans-serif;
+    /* font-family: sans; */
+
+}
+
+
+.my-profile .myprofile-aside-list h6 {
+    color: black;
+    /* background-color: gray; */
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-size: 19px;
+    padding: 1.5px 0 1.5px 20px;
+
+}
+
+/* MY PR0FILE OTHER LINK */
+.my-profile .myprofile-aside-list ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+
+.my-profile .myprofile-aside-list ul li {
+    list-style-type: none;
+    margin: 0 0;
+}
+
+.my-profile .myprofile-aside-list ul li a {
+    list-style-type: none;
+    /* padding: 10px 0; */
+    display: block;
+    padding: 3px 0px 3px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.my-profile .myprofile-aside-list .active {
+    background-color: rgb(241, 241, 241);
+    color: rgb(249, 140, 8);
+    font-weight: 500;
+
+}
+
+/* _____ PROFILE RIGHT SIDE CONTENT _____ */
+
+/* PROFILE RIGHT SIDE CONTAINER */
+.My-Profile_RightSide .profile-details {
+    margin-left: 30px;
+}
+
+.My-Profile_RightSide h1 {
+    color: rgb(249, 140, 8);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* PROFILE EDIT BUTTON */
+.my-profile .My-Profile_RightSide .profile-btn {
+    margin: 50px 0 0 30px;
+
+}
+
+.my-profile .My-Profile_RightSide button {
+    width: 140px;
+    padding: 10px 16px;
+    border: 0.1px solid white;
+    border-radius: 50px;
+    background-color: rgb(249, 140, 8);
+    color: #fff;
+    font-size: 19px;
+    font-weight: 550;
+}
+/* -----------------------PROFILE PAGE START END--------------- */
+
+
+/* _____*********______ SELLER MAIN PAGE START _____**************_____ */
+.seller-main {
+    background-color: rgb(249, 140, 8);
+
+}
+
+.seller-main-content {
+    padding-left: 40px;
+}
+
+/* ___________ SELLER MAIN PAGE IMAGE __________ */
+
+.seller-main-content .seller-img-text img {
+    height: 450px;
+}
+
+.seller-main .seller-main-text {
+    padding: 0 10px;
+}
+
+/* ___________ SELLER MAIN TEXT __________ */
+
+.seller-main .seller-main-text h1 {
+    color: white;
+    font-family: serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 48px;
+    text-shadow: 1px 8px 10px slategrey
+}
+
+/* ___________ SELLER MAIN PAGE ICONS__________ */
+
+.seller-main-content .seller-icons {
+    padding: 5px 15px;
+}
+
+.seller-main-content .seller-icons img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.seller-main-content .seller-icons p {
+    font-weight: 500;
+    color: white;
+    line-height: 1;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* ___________ SELLER MAIN PAGE FORM (RIGHT SIDE) __________ */
+
+.seller-main .seller-form h1 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    display: block;
+    font-size: 22px;
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+
+/* ___________ SELLER MAIN PAGE FORM INPUT & SUBMIT BUTTN __________ */
+
+.seller-main .seller-form-info {
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.seller-main .seller-form-info input {
+    height: 30px;
+    line-height: 0;
+}
+
+/* form leble */
+.seller-main .seller-form-info .form-group {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 13px;
+}
+
+.seller-main .seller-form-info button {
+    background-color: rgb(249, 140, 8);
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+/* ___________ SELLER MAIN PAGE FORM OR CONTACT__________ */
+
+.seller-main .seller-form .or p {
+    /* background-color: rgb(14, 6, 0); */
+    background-color: rgb(249, 140, 8);
+    color: white;
+    padding: 8px 0;
+    font-size: 18px;
+    margin: 0;
+}
+
+.seller-main .seller-form .call-us {
+    /* background-color: rgb(14, 6, 0); */
+    background-color: rgb(23, 10, 1);
+    color: white;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.seller-main .seller-form .call-us h6 {
+    /* background-color: rgb(14, 6, 0); */
+    font-size: 14px;
+    line-height: 1;
+}
+
+.seller-main .seller-form .call-us p {
+    /* background-color: rgb(14, 6, 0); */
+    font-size: 12px;
+    font-weight: 0;
+    color: gray;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    line-height: .5;
+}
+
+.seller-main .seller-form .email-us h6 {
+    /* background-color: rgb(14, 6, 0); */
+    font-size: 12px;
+    font-weight: 0;
+    color: white;
+    background-color: rgb(23, 10, 1);
+    margin-top: 10px;
+    padding: 15px 0;
+
+}
+
+/* ___________ _______SELLER MAIN PAGE END _______ __________ */
+
+
+
+/* ___________________PRODUCT RETURN OREDERD PAGE START __________ */
+
+.my-profile .returnproduct .name {
+    /* background-color: red; */
+    padding: 0 40px 0 40px;
+
+    /* RETURN-ORDERED HEADING   */
+}
+
+.my-profile .headding h2 {
+    color: rgb(249, 140, 8);
+    font-family: sans-serif;
+    word-spacing: 0;
+    font-weight: 600;
+}
+.my-profile .order-number{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* RETURN-ORDERED PRODUCT-NAME */
+.my-profile .returnproduct .name h6 {
+    font-size: 18px;
+    /* font-size: 19px; */
+    text-transform: capitalize;
+    line-height: 1.4;
+    margin-top: -7px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+
+}
+
+/* RETURN-ORDERED RATING START */
+.my-profile .returnproduct .name .rating {
+    text-transform: capitalize;
+    padding: 8px 0;
+}
+
+.my-profile .returnproduct .name .rating span i {
+    margin: 0 2px;
+}
+
+.my-profile .returnproduct .name p {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    /* line-height: 1; */
+    color: gray;
+}
+
+/* RETURN-ORDERED prices */
+.my-profile .returnproduct .name .prices {
+    margin-bottom: 0;
+    padding: 20px 0 0 0;
+}
+
+.my-profile .returnproduct .name .price {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: black;
+}
+
+.my-profile .returnproduct .name .market-price {
+    text-decoration: line-through;
+}
+
+.my-profile .returnproduct .name .discount {
+    color: red;
+    font-weight: 500;
+}
+
+
+/* RETURN-ORDERED PICKUP STATUS */
+.my-profile .pickup-status {
+    color: red;
+    width: 80%;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.my-profile .pickup-line {
+    width: 78%;
+    padding-left: 8px;
+}
+
+.my-profile .pickup-rectangle {
+    padding-left: 17px;
+}
+/* ____________PRODUCT RETURN OREDERD PAGE END __________ */
+
+
+/* ****************** PRODUCTS-LISTENING-PAGES ************** */
+/* ############## PRODUCTS-LISTENING-PAGES AND REVIEW ######### */
+html {
+    scroll-behavior: smooth;
+}
+
+.Products-listening .small-img img {
+    margin-bottom: 6px;
+    padding: 0 5px;
+    border: 1px solid rgb(240, 208, 208);
+}
+
+.Products-listening .products-details h6 {
+    font-weight: 700;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.Products-listening .rating i {
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.Products-listening .rating-count {
+    font-size: 13px;
+}
+
+.prices {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+}
+
+.price {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: black;
+}
+
+.market-price {
+    text-decoration: line-through;
+}
+
+.discount {
+    color: red;
+}
+
+.Products-listening .short-description {
+    margin: 5px 0;
+}
+
+.Products-listening .short-description h6 {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    line-height: .8;
+}
+
+.Products-listening .short-description p {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: rgb(42, 41, 41);
+    line-height: 1.3;
+}
+
+.Products-listening .Size-Qty {
+    margin-top: 10px;
+}
+
+.Products-listening .Size-Qty h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Products-listening .size-number {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    text-align: center;
+    padding: 7px;
+    display: block;
+    font-size: 11px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.Products-listening .size-number:hover {
+    cursor: pointer;
+}
+
+.Products-listening .quantity .decreament,
+.increament {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid black;
+    display: block;
+}
+
+.Products-listening .quantity .count {
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    padding: 0px;
+    font-size: 17px;
+    /* font-weight: 700; */
+    border: 1px solid black;
+    display: block;
+}
+
+.Products-listening .select-quantity {
+    cursor: pointer;
+}
+
+.cart-btn,
+.buy-btn {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(249, 140, 8);
+}
+
+.Products-listening .wishlist-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    font-weight: 600;
+    /* padding: 5px 15px; */
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.Products-listening .products-share h6 {
+    font-size: 14px;
+    text-align: end;
+}
+
+.Products-listening .icons a {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+}
+
+.Products-listening .diliverySupport {
+    margin-top: 10px;
+    padding: 8px 0;
+    width: 80%;
+}
+
+.Products-listening .diliverySupport span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ********** PRODUCTS REVIEWS ********** */
+.Products-review button {
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.Products-review button:hover {
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+}
+
+.Products-review .tab-pane h6 {
+    font-weight: 700;
+    margin: 5px 0 15px 0;
+}
+
+.Products-review .tab-pane p {
+    font-family: sans-serif;
+    font-size: 12px;
+    /* line-height: 1.2; */
+}
+
+/* ********** COSTUMER REVIEWS ********** */
+
+/* ***** REVIEW LEFT-SIDE ******* */
+.costumer-review .left-side .rating i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.costumer-review .rating-in-progress label,
+span {
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+}
+
+.costumer-review .rating-in-progress progress {
+    width: 70%;
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid black;
+
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(237, 187, 172);
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(249, 140, 8)
+}
+
+.review-btn {
+    width: 200px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    pad: 2px 5px;
+}
+
+.review-thought {
+    font-size: 12px;
+}
+
+
+/* ***** REVIEW RIGHT-SIDE ******* */
+.costumer-review .right-side h5 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.costumer-review .right-side h6 {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(170, 0, 0);
+    margin-top: 15px;
+}
+
+.costumer-review .right-side p {
+    font-size: 12px;
+    color: rgb(44, 10, 10);
+    margin-bottom: 15px 0;
+}
+
+.costumer-review .right-side .rating i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.costumer-review .right-side .rating-count {
+    font-size: 14px;
+    font-weight: 500;
+    /* margin-right: 5px; */
+    /* background-color: RED; */
+}
+
+.helpfull-btn {
+    width: 80px;
+    height: 40px;
+    font-size: 13px;
+    border: none;
+    padding: 5px 5px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.costumer-review .see-all-revie {
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* ********** COSTUMER REVIEWS END********** */
+
+
+/* ******** SIMILER PRODUCT START STYLE***** */
+.similer-products .products-details {
+    margin: 8px 0 2px 0;
+    padding: 3px 0;
+
+}
+
+.similer-products h1 {
+    font-family: sans;
+    font-weight: 550;
+    font-size: 40px;
+    word-spacing: 2px;
+    letter-spacing: 0;
+}
+
+.similer-products h6 {
+    font-weight: 700;
+    margin: 1px 0;
+    padding: 0;
+    font-size: 16px;
+
+}
+
+.similer-products .prices {
+    padding-top: 2px;
+    margin: 2px 0;
+}
+
+.similer-products .prices p {
+    font-weight: 500;
+    font-size: 13px;
+    padding: 2px 2px;
+    margin: 0px 0px 2px 0px;
+}
+
+.similer-products .rating i {
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 5px;
+
+}
+/* ****** SIMILER PRODUCT END STYLE****** */
+
+/* ############## PRODUCTS-LISTENING-PAGES AND REVIEW ######### */
+
+
+/* ******************** FAQ PAGE SECTION START *************** */
+/* .left-side */
+.FAQ .myprofile-aside-list ul li{
+    margin-bottom: 2px;
+    padding: 2px 0;
+}
+.FAQ .myprofile-aside-list h6{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+/* FAQ RIGHT SIDE ****** */
+.faq h2 {
+    /* background-color: gray; */
+    color: rgb(249, 140, 8);
+    font-weight: 650;
+    font-size: 24px;
+}
+
+
+.Faq_RightSide .help-question h6 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-Help-questions {
+    border-bottom: 1px solid gray;
+    margin-top: 0;
+    padding: 0;
+}
+
+.help-question strong {
+    text-align: center;
+    /* display: none; */
+    color: red;
+    cursor: pointer;
+    /* background: #000; */
+    font-size: 22px;
+}
+
+/* ******************** FAQ PAGE SECTION END *************** */
+
+
+
+
+/* ------    P-A-M-E-N-T  & S-E-R-V-I-C-E-S &  F-O-O-T-E-R ------ */
+
+
+/* _____________ PROFILE PAYMENT SERVICES START __________  */
+.Profile-Service {
+    padding-top: 20px;
+    margin-top: 3rem;
+}
+
+.profile-service .col {
+    border: .5px solid rgb(222, 222, 222);
+    padding: 40px 0;
+    border-left: none;
+}
+
+.profile-service:nth-child(1) {
+    border-left: 1px solid rgb(222, 222, 222);
+}
+
+.profile-service .col h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 5px 0 5px 0;
+}
+
+.profile-service .col p {
+    text-transform: capitalize;
+    color: gray;
+    font-size: 11px;
+    margin: 0;
+    line-height: 1.1;
+}
+/* _____________ PROFILE PAYMENT SERVICES END __________  */
+
+
+/* _____________ PROFILE OTHERS SERVICES WITH FOOTER START __________  */
+
+.profile-service-list {
+    margin: 2rem 0;
+    padding: 50px 0;
+}
+
+.profile-service-list-content h6 {
+    text-transform: uppercase;
+}
+
+.profile-service-list-content ul li {
+    list-style-type: none;
+}
+
+.profile-service-list-content ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    padding: 0;
+    text-transform: capitalize;
+
+}
+
+.profile-service-list-content ul input {
+    margin-top: 2px;
+    background-color: rgb(248, 228, 200);
+}
+
+.profile-service-list-content ul button {
+    font-size: 12px;
+    padding: 3px 6px;
+    background-color: black;
+    color: white;
+}
+/* ____________PROFILE OTHERS SERVICES WITH FOOTER__________  */
+
+
+/* **************** CART PAGE CSS ***************** */
+#cart-card-wrapper h3{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+
+} 
+
+.myCart-product p{
+    color: gray;
+    font-size: 14px;
+}
+
+.myCart-product{
+    border: 1px solid rgb(245, 170, 170);
+}
+#cart-card-wrapper .qty-btn{
+    border: 1x solid gray;
+}
+#cart-card-wrapper .product-qty{
+    border: 1px solid gray;
+    
+}
+ .Cart-btn{
+    border-top: 1px solid rgb(245, 170, 170);
+    padding-left:10px ;
+} 
+#cart-card-wrapper  .price-details h5{
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+#cart-card-wrapper button{
+    padding: 2px 8px;
+    border: none;
+    background: rgb(240, 240, 240);
+    font-weight: 500;
+    margin: 0 8px;
+    font-size: 16px;
+    border-radius: 5px;
+} 
+
+/* aside css */
+.Cart-page aside .Cart-Total{
+    border: 1px solid#f8880f;
+}
+.Cart-page aside .Apply-Coupon{
+    padding: 10px;
+    border-bottom: 1px solid #f8880f;
+}
+.Cart-page aside .Apply-Coupon h6{
+    font-family: sans-serif;
+}
+.Cart-page aside .Apply-Coupon button{
+    font-family: sans-serif;
+    color: white;
+    background-color: #f8880f;
+    font-size: 14px;
+    border: 1px solid  #f8880f;;
+}
+.Cart-page aside .PRICE-DETAILS{
+    border-bottom: 1px solid #f8880f;
+    
+}
+.Cart-page aside .PRICE-DETAILS div{
+    margin: 1px 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+.Cart-page aside .PlaceOrder-btn button{
+    background-color:  #f8880f;
+    border: none;
+    font-size: 18px;
+}
+/* **************** CART PAGE CSS END***************** */
+
+/* **************** CHECKOUT PAGE CSS***************** */
+
+.Cart-page .PaymentDetails{
+    border: 1px solid silver;
+}
+.Cart-page .PaymentDetails div:nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+    /* color: red; */
+    /* color: yellow; */
+}
+.Cart-page .PaymentDetails div:nth-child(2){
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+    /* color: yellow; */
+}
+.Cart-page .PaymentDetails .Change-btn button{
+    border: 1px solid rgb(246, 204, 204);
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: darkorange;
+    background-color: white;
+    font-weight: bold;
+}
+.Cart-page .PaymentDetails .CheckoutLink ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 10px;
+}
+.Cart-page .PaymentDetails .CheckoutLink ul li{
+    list-style-type: none;
+    margin-bottom: 2px;
+} 
+.Cart-page .PaymentDetails .CheckoutLink ul li a{
+    padding: 10px 0 10px 10px;
+    display:block;
+    width: 100%;
+    text-decoration: none;
+    color: gray;
+} 
+.Cart-page .PaymentDetails .CardPayBtn button{
+    background-color: darkorange;
+    width: 82%;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.Cart-page .PaymentDetails .CardPayBtn p{
+    font-size: 10px ;
+    /* margin-bottom: 0; */
+    margin: 4px 0;
+}
+.Cart-page .PaymentDetails .CardPayBtn span{
+    font-size: 14px ;
+    margin-top: 2px ;
+    color: green;
+}
+/* **************** CHECKOUT PAGE CSS***************** */
+
+/* **************** EDIT-PROFILE PAGE CSS***************** */
+
+.my-profile .ProfileEdit form .genderGroup div{
+    border: 1px solid rgb(218, 218, 218);
+}
+.my-profile .ProfileEdit form .ChangePass-btn button{
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 0px;
+    background-color: white;
+    color: darkorange;
+}
+.my-profile .ProfileEdit form .form-group label{
+    font-size: 14px;
+    color: rgb(86, 84, 84);
+}
+.my-profile .ProfileEdit form .form-group ::placeholder, input{
+    font-size: 14px;
+    color: black;
+    padding: 3px 2;
+    height: 40px;
+}
+
+/* **************** EDIT-PROFILE PAGE CSS END ***************** */
+
+/* **************** My-ORDER PAGE CSS  ***************** */
+
+.my-profile .MyOrder-Product .returnproduct{
+    border: 1px solid rgb(251, 195, 195);
+    width: 80%;
+    
+}
+.my-profile .MyOrder-Product .returnproduct:hover{
+    box-shadow: 2px 2px 10px 5px rgb(250, 214, 214);
+}
+
+.my-profile .MyOrder-Product h5{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.my-profile .MyOrder-Product .star{
+    color: rgb(255, 225, 0) ;
+}
+.my-profile .MyOrder-Product .myorder-track h6 {
+    font-size: 14px;
+}
+.my-profile .MyOrder-Product .myorder-track p{
+    font-size: 12px;
+}
+.my-profile .MyOrder-Product .myorder-track button{
+    border: none;
+}
+.my-profile .MyOrder-Product .deliver-point{
+    width: 15px;
+    height: 15px;
+    /* color: green; */
+    border: 4px solid green;
+    border-radius: 50%;
+    text-align: center;
+    /* margin-top: 2px; */
+}
+/* **************** My-ORDER PAGE CSS END ***************** */
+
+
+/* ____________TRACK OREDERD PAGE  __________ */
+
+.my-profile .tracktOrder .name {
+    /* background-color: red; */
+    padding: 0 40px 0 40px;
+
+    /* TRACK-ORDERED HEADING   */
+}
+
+.my-profile .headding h2 {
+    color: rgb(249, 140, 8);
+    font-family: sans-serif;
+    word-spacing: 0;
+    font-weight: 600;
+}
+.my-profile .order-number{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* TRACK-ORDERED PRODUCT-NAME */
+.my-profile .tracktOrder .name h6 {
+    font-size: 18px;
+    /* font-size: 19px; */
+    text-transform: capitalize;
+    line-height: 1.4;
+    margin-top: -7px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+
+}
+
+/* TRACK-ORDERED RATING START */
+.my-profile .tracktOrder .name .rating {
+    text-transform: capitalize;
+    padding: 8px 0;
+}
+
+.my-profile .tracktOrder .name .rating span i {
+    margin: 0 2px;
+}
+
+.my-profile .tracktOrder .name p {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    /* line-height: 1; */
+    color: gray;
+}
+
+/* TRACK-ORDERED prices */
+.my-profile .tracktOrder .name .prices {
+    margin-bottom: 0;
+    padding: 20px 0 0 0;
+}
+
+.my-profile .tracktOrder .name .price {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: black;
+}
+
+.my-profile .tracktOrder .name .market-price {
+    text-decoration: line-through;
+}
+
+.my-profile .tracktOrder .name .discount {
+    color: red;
+    font-weight: 500;
+}
+
+
+/* TRACK-ORDERED PICKUP STATUS */
+.my-profile .track-pickup-status {
+    color: red;
+    width: 80%;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.my-profile .track-pickup-line {
+
+    width: 78%;
+}
+.my-profile .track-pickup-line .Line53{
+    height: 2px;
+    width: 300px;
+    color: gray;
+    border: 1px solid rgb(232, 228, 228);
+}
+.my-profile .track-pickup-line .Ellipse36{
+    height: 25px;
+    width: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    border: 1px solid rgb(232, 228, 228);
+}
+
+.my-profile .pickup-rectangle {
+    padding-left: 17px;
+}
+.my-profile .Track-Order .need-help h5{
+    font-size: 16px;
+    margin-right: 4px;
+    color: blue;
+}
+.my-profile .Track-Order .delivery-time{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.my-profile .Track-Order .delivered h6{
+    font-size: 17px ;
+    font-family: sans-serif;
+    margin-bottom: 2px;
+}
+.my-profile .Track-Order .delivered .row div{
+    color: black;
+    margin-top: 5px;
+    font-size: 13px ;
+    font-weight: 700;
+}
+.my-profile .Track-Order .delivered a{
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+/* ____________TRACK OREDERD PAGE END __________ */
+
+/* ____________WISHLIST PAGE START__________  */
+.my-profile .Wishlist-Product .returnproduct{
+    border: 1px solid rgb(251, 195, 195);
+    
+}
+.my-profile .Wishlist-Product .returnproduct:hover{
+    box-shadow: 2px 2px 10px 5px rgb(250, 214, 214);
+}
+
+.my-profile .Wishlist-Product h5{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.my-profile .Wishlist-Product .star{
+    color: rgb(255, 225, 0) ;
+}
+
+.my-profile .Wishlist-Product .wishlist-btn button{
+    border: none;
+    margin: 2px 5px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 14px ;
+    font-weight: bold;
+}
+.my-profile .Wishlist-Product .addToCart-btn{
+    background-color: rgb(249, 140, 8);
+}
+.my-profile .Wishlist-Product .qty-btn{
+    border: 1x solid gray;
+}
+.my-profile .Wishlist-Product .qty-btn button{
+    background-color: red;
+    border: none;
+    padding: 1px 8px;
+    border: 1px solid gray;
+    background: rgb(240, 240, 240);
+    font-weight: 800;
+    /* margin: 0 8px; */
+    font-size: 16px;
+    /* border-radius: 5px; */
+}
+.my-profile .Wishlist-Product .product-qty{
+    border: 1px solid gray;
+    padding: 1px 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+/* ____________WISHLIST PAGE END__________  */
+
+
+/* ------    P-A-M-E-N-T  & S-E-R-V-I-C-E-S &  F-O-O-T-E-R ------ */
+/* _____________ PROFILE PAYMENT SERVICES START __________  */
+.Profile-Service {
+    padding-top: 20px;
+    margin-top: 3rem;
+}
+
+.profile-service .col {
+    border: .5px solid rgb(222, 222, 222);
+    padding: 40px 0;
+    border-left: none;
+}
+
+.profile-service:nth-child(1) {
+    border-left: 1px solid rgb(222, 222, 222);
+}
+
+.profile-service .col h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 5px 0 5px 0;
+}
+
+.profile-service .col p {
+    text-transform: capitalize;
+    color: gray;
+    font-size: 11px;
+    margin: 0;
+    line-height: 1.1;
+}
+/* _____________ PROFILE PAYMENT SERVICES END __________  */
+
+
+/* _____________ PROFILE OTHERS SERVICES WITH FOOTER START __________  */
+
+.profile-service-list {
+    margin: 2rem 0;
+    padding: 50px 0;
+}
+
+.profile-service-list-content h6 {
+    text-transform: uppercase;
+}
+
+.profile-service-list-content ul li {
+    list-style-type: none;
+}
+
+.profile-service-list-content ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    padding: 0;
+    text-transform: capitalize;
+
+}
+
+.profile-service-list-content ul input {
+    margin-top: 2px;
+    background-color: rgb(248, 228, 200);
+}
+
+.profile-service-list-content ul button {
+    font-size: 12px;
+    padding: 3px 6px;
+    background-color: black;
+    color: white;
+}
+/* ____________PROFILE OTHERS SERVICES WITH FOOTER END__________  */
+
+
+/* <!-- *********  FOOTER *******  --> */
+.profile-footer {
+    padding: 10px 0;
+}
+
+.profile-footer .profile-footer-image img {
+    /* width: 80px; */
+    margin-right: 6px;
+    width: 60px;
+    height: 30px;
+}
+
+.profile-footer .profile-footer-icons img {
+    /* width: 80px; */
+    width: 30px;
+    height: 25px;
+    margin-right: 6px;
+}
+/* &&&&&&&&&&&& FOOTER PAGE END $$$$$$$$$$$ */
